@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simpe Tailwind Starter</title>
+  </head>
+  <body class="bg-veryDarkBlue font-overpass">
+    <main class="flex items-center justify-center h-screen">
+      <div id="rating-form" class="bg-darkBlue flex flex-col p-6 rounded-3xl space-y-6 w-[312px] ">
+        <div
+          class="flex items-center justify-center w-10 h-10 bg-[#3c3f44] rounded-full"
+        >
+          <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+              fill="#FC7614"
+            />
+          </svg>
+        </div>
+        <div>
+          <h2 class="text-white text-2xl font-bold">How did we do?</h2>
+          <p class="text-[15px] text-mediumGrey">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        </div>
+        <div class="flex justify-between">
+          <button class="btn btn--1 active-toggle flex items-center justify-center w-12 h-12 bg-[#3c3f44] rounded-full text-mediumGrey hover:bg-mediumGrey hover:text-white transition-all">1</button>
+          <button class="btn btn--2 active-toggle flex items-center justify-center w-12 h-12 bg-[#3c3f44] rounded-full text-mediumGrey hover:bg-mediumGrey hover:text-white transition-all">2</button>
+          <button class="btn btn--3 active-toggle flex items-center justify-center w-12 h-12 bg-[#3c3f44] rounded-full text-mediumGrey hover:bg-mediumGrey hover:text-white transition-all">3</button>
+          <button class="btn btn--4 active-toggle flex items-center justify-center w-12 h-12 bg-[#3c3f44] rounded-full text-mediumGrey hover:bg-mediumGrey hover:text-white transition-all">4</button>
+          <button class="btn btn--5 active-toggle flex items-center justify-center w-12 h-12 bg-[#3c3f44] rounded-full text-mediumGrey hover:bg-mediumGrey hover:text-white transition-all">5</button>
+        </div>
+        <div>
+          <button type="submit" class="bg-orange text-white w-full p-2 rounded-full text-center hover:bg-white hover:text-orange transition-all">SUBMIT</button>
+        </div>
+
+      </div>
+
+      <!-- Thank You Message -->
+      <div id="thankyou-message" class="relative bg-darkBlue hidden flex-col px-6 py-12 rounded-3xl space-y-6 w-[312px]">
+        <button id="close-button" class="absolute top-4 right-4 text-white text-3xl">&times;</button>
+        <div class="flex items-center justify-center">
+          <img src="images/illustration-thank-you.svg" alt="">
+        </div>
+        <div class="flex items-center bg-[#3c3f44] text-center w-fit mx-auto px-4 py-1 rounded-3xl">
+          <p class="text-orange text-[15px]" id="selected-rating-message"></p>
+        </div>
+      
+        <div class="text-center space-y-3">
+          <h2 class="text-white font-bold text-2xl">Thank you!</h2>
+          <p class="text-mediumGrey">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+        </div>
+      </div>
+      
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
